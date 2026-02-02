@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="苏壹 · Suyi 的个人网站">
+  <title>苏壹 · Suyi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0c0f0c;
+      --surface: #141814;
+      --text: #e4e2dc;
+      --muted: #8a8f88;
+      --accent: #4a7c59;
+      --accent-soft: rgba(74, 124, 89, 0.25);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Serif SC', serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0 3rem;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo-en {
+      font-size: 0.95rem;
+      letter-spacing: 0.4em;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .tagline {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    nav {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.05rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .nav-link:hover {
+      border-color: var(--accent-soft);
+      background: rgba(74, 124, 89, 0.08);
+    }
+
+    .nav-link .title {
+      font-weight: 600;
+    }
+
+    .nav-link .desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1 class="logo">苏壹</h1>
+      <p class="logo-en">SUYI</p>
+      <p class="tagline">一隅之趣，一念之壹</p>
+    </header>
+
+    <nav>
+      <a class="nav-link" href="gomoku.html">
+        <span class="title">苏壹五子棋</span>
+        <span class="desc">在线对战 · 分享链接即可与好友对弈</span>
+      </a>
+      <!-- 后续可在此添加更多链接，如：作品、关于、联系 -->
+    </nav>
+
+    <footer>
+      <a href="https://suyi.com">suyi.com</a>
+    </footer>
+  </div>
+</body>
+</html>
